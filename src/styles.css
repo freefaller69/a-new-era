@@ -4,3 +4,7 @@
 * {
   font-family: 'Lora', serif;
 }
+
+.active {
+  background-color: #eee;
+}

@@ -8,6 +8,12 @@ import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { ProgramComponent } from './program/program.component';
 import { StudentsComponent } from './students/students.component';
+import { HistoryComponent } from './program/history/history.component';
+import { ReplicationsComponent } from './program/replications/replications.component';
+import { FathersComponent } from './program/fathers/fathers.component';
+import { LiteracyComponent } from './program/literacy/literacy.component';
+import { InternationalComponent } from './program/international/international.component';
+import { OverviewComponent } from './program/overview/overview.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { StudentsComponent } from './students/students.component';
     NavComponent,
     HeaderComponent,
     ProgramComponent,
-    StudentsComponent
+    StudentsComponent,
+    HistoryComponent,
+    ReplicationsComponent,
+    FathersComponent,
+    LiteracyComponent,
+    InternationalComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,

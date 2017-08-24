@@ -1,3 +1,15 @@
-<p>
-  program works!
-</p>
+<nav class="navbar">
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a routerLinkActive="active" routerLink="overview" class="navbar-item">Overview</a>
+      <a routerLinkActive="active" routerLink="history" class="navbar-item">History of the Down Syndrome Program</a>
+      <a routerLinkActive="active" routerLink="replications" class="navbar-item">Replications</a>
+      <a routerLinkActive="active" routerLink="fathers" class="navbar-item">Fathers Program and Sibling Support Project</a>
+      <a routerLinkActive="active" routerLink="literacy" class="navbar-item">Literacy Programs</a>
+      <a routerLinkActive="active" routerLink="international" class="navbar-item">International Outreach</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
