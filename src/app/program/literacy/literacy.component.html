@@ -1,16 +1,13 @@
-<p>
-  literacy works!
-</p>
-<nav class="navbar">
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <a routerLinkActive="active" routerLink="recollections" class="navbar-item">Literacy Skill Development</a>
-      <a routerLinkActive="active" routerLink="chicago" class="navbar-item">Gigi’s Playhouse</a>
-      <a routerLinkActive="active" routerLink="irvine" class="navbar-item">So Happy To Learn</a>
-      <a routerLinkActive="active" routerLink="sooregon" class="navbar-item">"Reading About Me"</a>
-    </div>
-  </div>
-</nav>
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="row justify-content-center">
+    <ul class="nav nav-tabs nav-fill">
+      <li routerLinkActive="active" class="nav-item"><a routerLink="recollections" class="nav-link">Literacy Skill Development</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="chicago" class="nav-link">Gigi’s Playhouse</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="irvine" class="nav-link">So Happy To Learn</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="sooregon" class="nav-link">"Reading About Me"</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>

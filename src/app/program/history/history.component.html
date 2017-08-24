@@ -1,17 +1,14 @@
-<p>
-  history works!
-</p>
-<nav class="navbar">
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <a routerLinkActive="active" routerLink="beginnings" class="navbar-item">How It Began<br /> 1964 - 1971</a>
-      <a routerLinkActive="active" routerLink="models" class="navbar-item">Down Syndrome Model Programs<br /> 1971 - 1979</a>
-      <a routerLinkActive="active" routerLink="preschool" class="navbar-item">Model Preschool Outreach<br /> 1980 - 1989</a>
-      <a routerLinkActive="active" routerLink="chdd" class="navbar-item">Down Syndrom Program, CHDD<br /> 1990 - 1997</a>
-      <a routerLinkActive="active" routerLink="saut" class="navbar-item">SAUT Down Syndrome Model Programs<br /> 1991 to Present</a>
-    </div>
-  </div>
-</nav>
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="row justify-content-center">
+    <ul class="nav nav-tabs nav-fill">
+      <li routerLinkActive="active" class="nav-item"><a routerLink="beginnings" class="nav-link">How It Began<br>1964 - 1971</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="models" class="nav-link">Model Programs<br>1971 - 1979</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="preschool" class="nav-link">Preschool Outreach<br>1980 - 1989</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="chdd" class="nav-link">CHDD<br>1990 - 1997</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="saut" class="nav-link">SAUT Model Programs<br>1991 to Present</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>

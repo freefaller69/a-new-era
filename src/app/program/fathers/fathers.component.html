@@ -1,16 +1,13 @@
-<p>
-  fathers works!
-</p>
-<nav class="navbar">
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <a routerLinkActive="active" routerLink="sefambg" class="navbar-item">Serving Extended Family Members</a>
-      <a routerLinkActive="active" routerLink="meyerschell" class="navbar-item">Fathers Network and Sibling Support Project</a>
-      <a routerLinkActive="active" routerLink="fathersstory" class="navbar-item">A Father's Story</a>
-      <a routerLinkActive="active" routerLink="sibstories1" class="navbar-item">A Tale of Two Sisters</a>
-    </div>
-  </div>
-</nav>
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="row justify-content-center">
+    <ul class="nav nav-tabs nav-fill">
+      <li routerLinkActive="active" class="nav-item"><a routerLink="sefambg" class="nav-link">Serving Extended Family Members</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="meyerschell" class="nav-link">Fathers Network and Sibling Support Project</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="fathersstory" class="nav-link">A Father's Story</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="sibstories" class="nav-link">A Tale of Two Sisters</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>

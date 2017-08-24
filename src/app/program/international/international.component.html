@@ -1,15 +1,12 @@
-<p>
-  international works!
-</p>
-<nav class="navbar">
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <a routerLinkActive="active" routerLink="australia" class="navbar-item">Australia</a>
-      <a routerLinkActive="active" routerLink="saudiarabia" class="navbar-item">Saudi Arabia</a>
-      <a routerLinkActive="active" routerLink="spain" class="navbar-item">Spain</a>
-    </div>
-  </div>
-</nav>
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="row justify-content-center">
+    <ul class="nav nav-tabs nav-fill">
+      <li routerLinkActive="active" class="nav-item"><a routerLink="australia" class="nav-link">Australia</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="saudiarabia" class="nav-link">Saudi Arabia</a></li>
+      <li routerLinkActive="active" class="nav-item"><a routerLink="spain" class="nav-link">Spain</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>

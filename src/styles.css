@@ -5,6 +5,10 @@
   font-family: 'Lora', serif;
 }
 
+.outline {
+  outline: 1px solid red;
+}
+
 .active {
-  background-color: #eee;
+  background-color: #ddd;
 }
