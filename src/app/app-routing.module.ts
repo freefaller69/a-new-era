@@ -41,29 +41,35 @@ const routes: Routes = [
       { path: 'preschool', component: PreschoolComponent },
       { path: 'chdd', component: ChddComponent },
       { path: 'saut', component: SautComponent },
+      { path: '', redirectTo: 'beginnings', pathMatch: 'full' },
      ] },
     { path: 'replications', component: ReplicationsComponent, children: [
       { path: 'firstreplication', component: FirstreplicationComponent },
       { path: 'prideschool', component: PrideschoolComponent },
       { path: 'kids', component: KidsComponent },
+      { path: '', redirectTo: 'firstreplication', pathMatch: 'full' },
     ] },
     { path: 'fathers', component: FathersComponent, children: [
       { path: 'sefambg', component: SefambgComponent },
       { path: 'meyerschell', component: MeyerschellComponent },
       { path: 'fathersstory', component: FathersstoryComponent },
       { path: 'sibstories', component: SibstoriesComponent },
+      { path: '', redirectTo: 'sefambg', pathMatch: 'full' },
     ] },
     { path: 'literacy', component: LiteracyComponent, children: [
       { path: 'recollections', component: RecollectionsComponent },
       { path: 'chicago', component: ChicagoComponent },
       { path: 'irvine', component: IrvineComponent },
       { path: 'sooregon', component: SooregonComponent },
+      { path: '', redirectTo: 'recollections', pathMatch: 'full' },
     ] },
     { path: 'international', component: InternationalComponent, children: [
       { path: 'australia', component: AustraliaComponent },
       { path: 'saudiarabia', component: SaudiarabiaComponent },
       { path: 'spain', component: SpainComponent },
+      { path: '', redirectTo: 'australia', pathMatch: 'full' },
     ] },
+    { path: '', redirectTo: 'overview', pathMatch: 'full' },
     ] },
   {
     path: 'students', component: StudentsComponent, children: [
