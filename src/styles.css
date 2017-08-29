@@ -9,10 +9,83 @@
   outline: 1px solid red;
 }
 
+.active>a, .active {
+  background-color: #4b2e83;
+  color: #fff;
+}
+
 .active {
-  background-color: #ddd;
+  background-color: #dfdfdf;
 }
 
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav {
+  overflow: hidden;
+  position: fixed;
+  top: 56px;
+  z-index: 1;
+}
+
+.nav-program:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.nav-item:not(.nav-program):not(:last-child) {
+  border-right: 1px solid #dfdfdf;
+}
+
+.main {
+  margin-top: 56px;
+}
+
+article {
+  width: 90%;
+  margin: 65px auto 0;
+  z-index: -1;
+}
+
+.nav:not(.nav-program) {
+  background-color: #fff !important;
+  z-index: 1;
+  width: 60%;
+}
+
+header {
+  text-align: center;
+}
+
+blockquote {
+  margin: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+hr {
+  width: 60%;
+}
+
+figure {
+  padding: 5px;
+  border: 1px solid #cecece;
+  width: 20rem;
+}
+
+figure.float-left {
+  margin: 5px 15px 0 5px;
+}
+
+figure.float-right {
+  margin: 5px 5px 0 15px;
+
 }
